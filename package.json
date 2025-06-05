@@ -7,6 +7,7 @@
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "dotenv -e .env -- nodemon server.js",
+    "dev:docker": "dotenv -e .env.docker -- nodemon server.js",
     "prisma": "prisma"
   },
   "keywords": [],
@@ -20,6 +21,7 @@
     "express": "^5.1.0"
   },
   "devDependencies": {
+    "dotenv-cli": "^8.0.0",
     "nodemon": "^3.1.10",
     "prisma": "^6.9.0"
   }
